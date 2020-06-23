@@ -4,6 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "init-project": "npm install && npm run init:dirs && npm run init:files && npm run init:gitignore",
+    "init:dirs": "mkdirp sass css vendor images js",
+    "init:files": "touch README.md index.html sass/style.scss js/script.js",
+    "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/Danello92/task-runner/issues"
   },
-  "homepage": "https://github.com/Danello92/task-runner#readme"
+  "homepage": "https://github.com/Danello92/task-runner#readme",
+  "devDependencies": {
+    "html-validate": "^3.0.0"
+  }
 }
