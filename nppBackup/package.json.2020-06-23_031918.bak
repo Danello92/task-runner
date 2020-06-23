@@ -12,7 +12,7 @@
     "test:html": "html-validate *.html",
 	"build:sass": "node-sass --output-style compact -o css sass",
 	"build:autoprefixer": "autoprefixer-cli css/style.css",
-	"build": "build:sass && build:autoprefixer && test"
+	"build": "bulid:sass && bulid:autoprefixer && test"
   },
   "repository": {
     "type": "git",

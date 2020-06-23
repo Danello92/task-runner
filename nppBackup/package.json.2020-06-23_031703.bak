@@ -10,9 +10,9 @@
     "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
     "test": "npm run test:html",
     "test:html": "html-validate *.html",
-	"build:sass": "node-sass --output-style compact -o css sass",
-	"build:autoprefixer": "autoprefixer-cli css/style.css",
-	"build": "build:sass && build:autoprefixer && test"
+	"bulid:sass": "node-sass --output-style compact -o css sass",
+	"bulid:autoprefixer": "autoprefixer-cli css/style.css",
+	"bulid": "bulid:sass && bulid:autoprefixer && test"
   },
   "repository": {
     "type": "git",
