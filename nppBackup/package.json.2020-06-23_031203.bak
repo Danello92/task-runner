@@ -12,7 +12,7 @@
     "test:html": "html-validate *.html"
 	"bulid:sass": "node-sass --output-style compact -o css sass"
 	"bulid:autoprefixer": "autoprefixer-cli css/style.css"
-	"bulid": "bulid:sass && bulid:autoprefixer && test"
+	"bulid:*"
   },
   "repository": {
     "type": "git",
